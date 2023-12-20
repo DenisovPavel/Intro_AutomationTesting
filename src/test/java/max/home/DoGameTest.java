@@ -11,11 +11,11 @@ class DoGameTest {
     Door doorFirst;
     Door doorSecond;
     Door doorThird;
-    static List<Door> doorList; // Список дверей;
+    static List<Door> doorList = new ArrayList<>(); // Список дверей;
 
     @BeforeEach
     void setUp() {
-        doorList = new ArrayList<>();
+//        doorList = new ArrayList<>();
         doorFirst = new Door(true); // 1 дверь всегда -> Победа!
         doorSecond = new Door(false); // 2 дверь всегда -> Проигрыш!
         doorThird = new Door(false); // 3 дверь всегда -> Проигрыш!
